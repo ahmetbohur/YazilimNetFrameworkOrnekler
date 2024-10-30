@@ -50,6 +50,7 @@
     <Compile Include="Bilgiler\LoopsExample.cs" />
     <Compile Include="Bilgiler\Namespaces.cs" />
     <Compile Include="Bilgiler\OperatorsExample.cs" />
+    <Compile Include="Bilgiler\TryCatchExample.cs" />
     <Compile Include="Ornekler\Calculator.cs" />
     <Compile Include="Ornekler\Patterns.cs" />
     <Compile Include="Ornekler\Pyramid.cs" />
