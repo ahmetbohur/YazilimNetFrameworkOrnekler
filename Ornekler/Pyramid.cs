@@ -48,44 +48,5 @@ namespace YazilimNetFrameworkOrnekler.Ornekler
                 Console.WriteLine();
             }
         }
-
-        internal void DrawCustomPyramid(int size)
-        {
-            // Üst kısım (artan yıldız sayısı)
-            for (int i = 1; i <= size; i += 2)
-            {
-                // Boşlukları yazdır
-                for (int j = 0; j < (size - i) / 2; j++)
-                {
-                    Console.Write(" ");
-                }
-
-                // Yıldızları yazdır
-                for (int k = 0; k < i; k++)
-                {
-                    Console.Write("*");
-                }
-
-                Console.WriteLine();
-            }
-
-            // Alt kısım (azalan yıldız sayısı)
-            for (int i = size - 2; i > 0; i -= 2)
-            {
-                // Boşlukları yazdır
-                for (int j = 0; j < (size - i) / 2; j++)
-                {
-                    Console.Write(" ");
-                }
-
-                // Yıldızları yazdır
-                for (int k = 0; k < i; k++)
-                {
-                    Console.Write("*");
-                }
-
-                Console.WriteLine();
-            }
-        }
     }
 }

@@ -11,9 +11,11 @@ namespace YazilimNetFrameworkOrnekler
     {
         static void Main(string[] args)
         {
+            OperatorsExample operators = new OperatorsExample();
+            operators.DisplayOperatorsExample();
 
-            Butterfly butterfly = new Butterfly();
-            butterfly.DrawButterfly(5);
+            Patterns patterns = new Patterns();
+            patterns.DrawArrow(5);
             Console.ReadLine();
 
         }

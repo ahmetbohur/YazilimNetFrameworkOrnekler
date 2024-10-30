@@ -49,8 +49,9 @@
     <Compile Include="Bilgiler\InterfaceExample.cs" />
     <Compile Include="Bilgiler\LoopsExample.cs" />
     <Compile Include="Bilgiler\Namespaces.cs" />
-    <Compile Include="Ornekler\Butterfly.cs" />
+    <Compile Include="Bilgiler\OperatorsExample.cs" />
     <Compile Include="Ornekler\Calculator.cs" />
+    <Compile Include="Ornekler\Patterns.cs" />
     <Compile Include="Ornekler\Pyramid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProjectEuler\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
