@@ -11,11 +11,8 @@ namespace YazilimNetFrameworkOrnekler
     {
         static void Main(string[] args)
         {
-            OperatorsExample operators = new OperatorsExample();
-            operators.DisplayOperatorsExample();
-
-            Patterns patterns = new Patterns();
-            patterns.DrawArrow(5);
+            ProjectEuler.ProjectEuler projectEuler = new ProjectEuler.ProjectEuler();
+            projectEuler.Problem3();
             Console.ReadLine();
 
         }

@@ -55,6 +55,7 @@
     <Compile Include="Ornekler\Patterns.cs" />
     <Compile Include="Ornekler\Pyramid.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectEuler\ProjectEuler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Bilgiler\RecursiveFunctions.cs" />
     <Compile Include="Bilgiler\VariableQualifiers.cs" />
@@ -63,8 +64,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ProjectEuler\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
