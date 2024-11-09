@@ -9,6 +9,13 @@ namespace YazilimNetFrameworkOrnekler
      Sınıflar, nesne yönelimli programlamada veri ve davranışları bir araya getiren yapı taşlarıdır. 
      Bir sınıf, özellikler (değişkenler) ve metodlar (fonksiyonlar) içerebilir.
 
+       Sınıf Türleri:
+       - **abstract class (Soyut Sınıf)**: Soyut sınıflar, başka sınıflar tarafından türetilebilir ancak doğrudan nesne oluşturulamaz. Genellikle ortak bir temel işlevsellik sağlamak için kullanılır.
+       - **sealed class (Mühürlü Sınıf)**: Mühürlü sınıflar başka sınıflar tarafından türetilemez. Bu, sınıfın genişletilemeyeceğini ve miras alınamayacağını belirtir.
+       - **partial class (Kısmi Sınıf)**: Kısmi sınıflar, bir sınıfın birden fazla dosyada tanımlanmasına izin verir. Bu, büyük projelerde sınıfların farklı parçalarda yönetilmesini sağlar.
+
+       Bu sınıf türlerinin kullanımı, yazılımın mimarisine esneklik ve kontrol sağlar.
+
      Sınıf Nasıl Tanımlanır - Sınıf Tanımlama Kuralları Nelerdir?
 
      [Erişim Belirleyici] class [Sınıf Adı]
