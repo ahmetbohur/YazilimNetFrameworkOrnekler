@@ -11,10 +11,28 @@ namespace YazilimNetFrameworkOrnekler
     {
         static void Main(string[] args)
         {
-            ProjectEuler.ProjectEuler projectEuler = new ProjectEuler.ProjectEuler();
-            projectEuler.Problem3();
+            var result = TwoSum(new int[] { 2, 11, 15 ,  7}, 9);
+            Console.WriteLine(result[0] + " " + result[1]); 
             Console.ReadLine();
-
         }
+        public static int[] TwoSum(int[] nums, int target)
+        {
+            Dictionary<int, int> numMap = new Dictionary<int, int>();
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int complement = target - nums[i];
+
+                if (numMap.ContainsKey(complement))
+                {
+                    return new int[] { numMap[complement], i };
+                }
+
+                numMap[nums[i]] = i;
+            }
+
+            throw new ArgumentException("No two sum solution");
+        }        
+
     }
 }
