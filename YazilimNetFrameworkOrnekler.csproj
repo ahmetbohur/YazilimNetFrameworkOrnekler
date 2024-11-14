@@ -76,6 +76,9 @@
     <Compile Include="Bilgiler\TryCatchExample.cs" />
     <Compile Include="Bilgiler\ValueTypesAndReferenceTypes.cs" />
     <Compile Include="Ornekler\Calculator.cs" />
+    <Compile Include="Ornekler\Games\RockPaperScissors\Account.cs" />
+    <Compile Include="Ornekler\Games\RockPaperScissors\AccountManager.cs" />
+    <Compile Include="Ornekler\Games\RockPaperScissors\RockPaperScissorsManager.cs" />
     <Compile Include="Ornekler\Patterns.cs" />
     <Compile Include="Ornekler\Pyramid.cs" />
     <Compile Include="Program.cs" />

@@ -1,23 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using YazilimNetFrameworkOrnekler.Ornekler;
-using YazilimNetFrameworkOrnekler.VeriTabanlari.SQLite;
+using YazilimNetFrameworkOrnekler.Ornekler.Games.RockPaperScissors;
 
 namespace YazilimNetFrameworkOrnekler
 {
     internal class Program
     {
+        static AccountManager accountManager = new AccountManager();
+
         static void Main(string[] args)
         {
-           SQLiteExample sQLiteExample = new SQLiteExample();
-            sQLiteExample.CheckConnectionDatabase();
-            sQLiteExample.CreateTable();
-            sQLiteExample.CreateAccount("Urhoba", "Ahmet", "Bohur", "123Password123321");
-            sQLiteExample.CreateAccount("Urhobaa", "Eren", "Bohur", "32123123asdasd");
-            Console.ReadLine();
+            while (accountManager.GetLoggedInAccount() == null)
+            {
+                accountManager.MainScreen();
+            }
+
+            RockPaperScissorsManager rockPaperScissorsManager = new RockPaperScissorsManager();
+
+            rockPaperScissorsManager.GameLoop();
+
+            accountManager.GetLoggedInAccount().Score = rockPaperScissorsManager.GetPlayerScore();
+
+            accountManager.Logout();
+
+            Main(args);
+
         }
 
     }
