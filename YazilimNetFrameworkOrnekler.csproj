@@ -73,6 +73,7 @@
     <Compile Include="Bilgiler\Linq.cs" />
     <Compile Include="Bilgiler\LoopsExample.cs" />
     <Compile Include="Bilgiler\Namespaces.cs" />
+    <Compile Include="Bilgiler\NamingConventionExample.cs" />
     <Compile Include="Bilgiler\OperatorsExample.cs" />
     <Compile Include="Bilgiler\Polimorfizm.cs" />
     <Compile Include="Bilgiler\RefOutExample.cs" />
