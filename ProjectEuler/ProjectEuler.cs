@@ -54,5 +54,25 @@ namespace YazilimNetFrameworkOrnekler.ProjectEuler
             Console.WriteLine(number);
         }
 
+        internal void Problem4()
+        {
+            int max = 0;
+            for (int i = 100; i < 1000; i++)
+            {
+                for (int j = 100; j < 1000; j++)
+                {
+                    int product = i * j;
+                    string productString = product.ToString();
+                    char[] productArray = productString.ToCharArray();
+                    Array.Reverse(productArray);
+                    string reversedProductString = new string(productArray);
+                    if (productString == reversedProductString && product > max)
+                    {
+                        max = product;
+                    }
+                }
+            }
+            Console.WriteLine(max);
+        }
     }
 }
