@@ -9,20 +9,11 @@ namespace YazilimNetFrameworkOrnekler
 
         static void Main(string[] args)
         {
-            while (accountManager.GetLoggedInAccount() == null)
-            {
-                accountManager.MainScreen();
-            }
+            YazilimNetFrameworkOrnekler.Bilgiler.ActionAndDelegate actionAndDelegate = new YazilimNetFrameworkOrnekler.Bilgiler.ActionAndDelegate();
 
-            RockPaperScissorsManager rockPaperScissorsManager = new RockPaperScissorsManager();
+            actionAndDelegate.RunExamples();
 
-            rockPaperScissorsManager.GameLoop();
-
-            accountManager.GetLoggedInAccount().Score = rockPaperScissorsManager.GetPlayerScore();
-
-            accountManager.Logout();
-
-            Main(args);
+            Console.ReadLine();
 
         }
 

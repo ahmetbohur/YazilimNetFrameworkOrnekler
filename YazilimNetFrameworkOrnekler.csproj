@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bilgiler\ActionAndDelegate.cs" />
     <Compile Include="Bilgiler\Classes.cs" />
     <Compile Include="Bilgiler\ConditionalStatementsExample.cs" />
     <Compile Include="Bilgiler\Functions.cs" />
