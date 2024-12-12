@@ -65,6 +65,8 @@
     <Compile Include="Bilgiler\ActionAndDelegate.cs" />
     <Compile Include="Bilgiler\Classes.cs" />
     <Compile Include="Bilgiler\ConditionalStatementsExample.cs" />
+    <Compile Include="Bilgiler\DataStructuresExamples.cs" />
+    <Compile Include="Bilgiler\DictionaryExample.cs" />
     <Compile Include="Bilgiler\Functions.cs" />
     <Compile Include="Bilgiler\Inheritance.cs" />
     <Compile Include="Bilgiler\InterfaceExample.cs" />
