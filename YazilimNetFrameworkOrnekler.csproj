@@ -80,6 +80,9 @@
     <Compile Include="Bilgiler\TryCatchExample.cs" />
     <Compile Include="Bilgiler\ValueTypesAndReferenceTypes.cs" />
     <Compile Include="Ornekler\Calculator.cs" />
+    <Compile Include="Ornekler\ClassicDTOPattern\BaseResponse.cs" />
+    <Compile Include="Ornekler\ClassicDTOPattern\BaseResponseData.cs" />
+    <Compile Include="Ornekler\ClassicDTOPattern\ExampleResponse.cs" />
     <Compile Include="Ornekler\Games\RockPaperScissors\Account.cs" />
     <Compile Include="Ornekler\Games\RockPaperScissors\AccountManager.cs" />
     <Compile Include="Ornekler\Games\RockPaperScissors\RockPaperScissorsManager.cs" />
